@@ -49,3 +49,22 @@ int main() {
 
     return 0;
 }
+
+/* output
+Breadth-First Traversal:
+Distance from 0 to 0: 0
+Distance from 0 to 1: 1
+Distance from 0 to 2: 1
+Distance from 0 to 3: 2
+
+Depth-First Traversal:
+Distance from 0 to 0: 0
+Distance from 0 to 1: 1
+Distance from 0 to 2: 1
+Distance from 0 to 3: 2
+
+Dijkstra's Shortest Path:
+Shortest path from 0 to 3:
+3 <- 1 <- 0
+Total distance: 4
+*/
