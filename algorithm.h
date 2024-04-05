@@ -3,6 +3,7 @@
 
 #include <limits>  // Include for numeric_limits
 #include <vector>  // Include for vector container
+ 
 
 // This ifndef/define block is a standard C++ header guard. It ensures that
 // the contents of this header file are included only once in a translation
@@ -14,6 +15,47 @@
 
 // We're also including <vector> for the vector container, which is commonly
 // used to store collections of objects in C++.
+
+
+// ------------ ALGORITHMS----------------
+
+//------------- SEARCHING ----------------
+
+// Binary Search declaration for algorithm functions
+template<typename T>
+int binary_search(const std::vector<T>& arr, const T& target);
+#include "binary_search_imp.cpp"
+
+//------------- SORTING ------------------
+
+
+// Function declaration for Merge Sort algorithm
+template<typename T>
+void merge_sort(std::vector<T>& arr);
+#include "mergesort_imp.cpp"
+
+// Function declaration for Bubble sort algorithm
+template<typename T>
+void bubble_sort(std::vector<T>& arr);
+#include "bubblesort_imp.cpp"
+
+// Function declaration for Insertion sort algorithm
+template<typename T>
+void insertion_sort(std::vector<T>& arr);
+#include "insertionsort_imp.cpp"
+
+// Function declaration for selection sort algorithm
+template<typename T>
+void selection_sort(std::vector<T>& arr);
+#include "selectionsort_imp.cpp"
+
+// Function declaration for quick sort algorithm
+template<typename T>
+void quick_sort(std::vector<T>& arr);
+#include "quicksort_imp.cpp"
+
+
+//--------------- GRAPH TRAVERSAL ALGORITHMS ------------------------------
 
 
 // Function definition for breadth-first traversal algorithm
@@ -33,10 +75,6 @@ template<typename T, typename Graph>
 void dijkstra(const Graph& graph, int start, int end, std::vector<T>& distances, std::vector<int>& path); 
 #include "dijikstra_imp.cpp"//header file inclusion
 
-// Binary Search declaration for algorithm functions
-template<typename T>
-int binary_search(const std::vector<T>& arr, const T& target);
-#include "binary_search_imp.cpp"
 
 // End of header guard
 #endif // ALGORITHM_H
