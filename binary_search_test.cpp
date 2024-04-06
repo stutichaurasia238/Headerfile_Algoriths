@@ -1,5 +1,5 @@
 #include <iostream>
-#include "algorithm.h" // Include your algorithm header file
+#include "dsa.h" // Include your algorithm header file
 
 int main() {
     // Sorted array for testing binary search
